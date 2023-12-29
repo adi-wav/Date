@@ -1,0 +1,105 @@
+body{
+    /* margin: 0%;
+    border: 0;
+    padding: 0; */
+    background-color: #ffb7ce;
+    color: white;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    font-size: xx-large;
+    text-align: center;
+}
+.req {
+    aspect-ratio: 1;
+    object-fit: cover;
+    --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+    -webkit-mask-box-image: var(--_m);
+               mask-border: var(--_m);
+    clip-path: polygon(-41% 1,50% 91%, 141% 0);
+  }
+  
+  /* fallback until better support for mask-border */
+  @supports not (-webkit-mask-box-image: var(--_m)) { 
+    img {
+     --_m:
+       radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+       radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+       linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+     -webkit-mask: var(--_m);
+             mask: var(--_m);
+    }
+  }
+.req{
+    /* height: 20%; */
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: 20%;
+    /* padding-top: 20%; */
+    /* border-radius: 80%; */
+}
+h2{
+    margin-top: -5px;
+}
+button{
+    font-weight: bold;
+    font-family:  cursive;
+    font-size: xx-large;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.yesi{
+    height: 70px;
+    width: 150px;
+}
+.noi{
+    height: 80px;
+    width: 170px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+/* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+} */
+.yb{
+    cursor: grab;
+    transition: .5s;
+}
+
+.yb:hover img{
+    transform: scale(1.5);
+    
+}
+
+.nb{
+    cursor: not-allowed;
+    transition: .5s;
+}
+
+.nb:hover img{
+    transform: scale(0.7);
+}
+
+#btn {
+    position: absolute;
+    transition: .5s;
+    margin: -10px 50px;
+    height: 50px;
+    width: 90px;
+    margin-bottom: -50px;
+}
+
+img.req{
+    height:250px !important;
+    width:250px !important;
+    margin-top: 120px;
+}
+
